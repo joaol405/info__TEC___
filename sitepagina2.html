@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="555" type="image/x-icon">
+  <title>Website Multilíngue</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    .h…
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="555" type="image/x-icon">
+  <title>Website Multilíngue</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    .header {
+      background-color: #0D575B;
+      color: #ffffff;
+      padding: 10px; /* Reduzido de 15px para 10px */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .header li:last-child {
+      margin-right: 0;
+    }
+
+    .header li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #0D575B;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+      background-color: #007bff;
+    }
+
+    .aside {
+      background-color: #0D575B;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .footer {
+      background-color: #0D575B;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      clear: both;
+      width: 100%;
+    }
+
+    /* Para desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    @media only screen and (max-width: 768px) {
+      /* Para telefones móveis: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+
+    .slider {
+      width: 80%;
+      margin: auto;
+    }
+
+    .slider img {
+      width: 75%; /* Ajustando o tamanho das imagens */
+      height: auto;
+    }
+
+    #whatsapp-number,
+    #facebook-text,
+    #instagram-text {
+      display: none;
+    }
+
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .language-buttons button {
+      background-color: #0D575B;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .language-buttons button:hover {
+      background-color: #007bff;
+    }
+
+     #word-text, #powerpoint-text, #excel-text {
+      color: #ffffff;
+    }
+
+    .background-gradient {
+      background: linear-gradient(to bottom, #017AB1 , #02202B);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body class="background-gradient">
+  <div class="header">
+    <h1><img src="logosite.png" alt="Info_tec" style="width: 35%;"></h1>
+    <ul>
+      <li><a href="#" onclick="showContent('word-content')">WORD</a></li>
+      <li><a href="#" onclick="showContent('powerpoint-content')">POWERPOINT</a></li>
+      <li><a href="#" onclick="showContent('excel-content')">EXCEL</a></li>
+      <li><a href="sitepagina3.html" onclick="showContent('proxima-content')">PRÓXIMA</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+       <div><img src="imgoffice1.jpg" style="width: 59%;" alt="OFFICE"></div>
+     
+      </section>
+
+      <section id="word-content" style="display:none;">
+        <div id="word-text">
+          <div><img src="imgword1.jfif" alt="Logotipo do Word"></div>
+          <h1> * WORD</h1>
+          <p> Com o Word no PC, Mac ou dispositivo móvel, você pode: Criar e formatar os seus documentos com Temas. Revisar o trabalho com Controlar Alterações. Refinar as suas palavras com revisores de texto como o Editor.</p>
+          <h1> * WORD</h1>
+          <p> With Word on your PC , MAC , ormobile device , you can : Create and format  your documnts with Themes . Review workwith Track Changes . Refine your words with proofreaders like Editor.</p>
+          <h1> * WORD</h1>
+          <p> Con Word en su PC, Mac o dispositivo móvil, puede: Crear y formatear sus documentos con Temas.   Revisar el trabajo con Seguimiento de cambios.   Refina tus palabras con correctores como Editor.</p>
+        </div>
+      </section>
+
+      <section id="powerpoint-content" style="display:none;">
+        <div id="powerpoint-text">
+          <div><img src="imgpp1.jfif" alt="Logotipo do PowerPoint"></div>
+          <h1> * POWERPOINT</h1>
+          <p> Com o PowerPoint no computador, Mac ou dispositivo móvel, você pode: Criar apresentações do zero ou usar um modelo. Adicionar texto, imagens, arte e vídeos. Escolher um design profissional com o Designer do PowerPoint.</p>
+          <h1> * POWERPOINT</h1>
+          <p> With PowerPoint on a computer , Mac or mobile device , you can : Create presentations from scratch or use a model . Add text , images , art and videos . Learn a professional design as a PowerPoint Designer .</p>
+          <h1> * POWERPOINT</h1>
+          <p> Con PowerPoint en su computadora , Mac o dispositivo móvil , puede : Crear presentaciones desde cero o usar una plantilla . Agregue texto , imágenes , arte y videos . Elija un diseño profesional con Powerpoint Designer .</p>
+        </div>
+      </section>
+
+      <section id="excel-content" style="display:none;">
+        <div id="excel-text">
+          <div><img src="imgexcel1.jfif" alt="Logotipo do Excel"></div>
+          <h1> * EXCEL</h1>
+          <p> O Excel é uma ferramenta incrivelmente poderosa para tornar significativa uma vasta quantidade de dados. Mas ele também funciona muito bem para cálculos simples e para rastrear de quase todos os tipos de informações. A chave para desbloquear todo esse potencial é a grade de células.</p>
+          <h1> * EXCEL</h1>
+          <p> Excel is an incredibly powerful tool for making . But it also works great for simple calculations and for tracking almost all types of information . The key to unlocking allthis potential is the cell grid .</p>
+          <h1> * EXCEL</h1>
+          <p> Excel es una herramienta increíblemente poderosa para dar significado a grandes cantidades de dados . Pero también funciona muy bien para cálculos sencillos y para rastrear casi todo tipo de información . La clave para desbloquear todo este potencial es la red celular .</p>
+        </div>
+      </section>
+    </div>
+    <div class="col-6">
+      <div class="slider">
+        <div><img src="imgword1.jfif" alt="WORD"></div>
+        <div><img src="imgpp1.jfif" style="width: 75%; alt="POWERPOINT"></div>
+        <div><img src="imgexcel1.jfif" alt="EXCEL"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="videos">
+    <iframe width="560" height="315" src="https://youtube.com/embed/pfUnnEKSn2g?si=5H8FCMwaNYqGhgMb" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://youtube.com/embed/HKSFMbT3n1A?si=eaPRtOlra5_BOup6" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://youtube.com/embed/h7IUY_JJkWo?si=b6t_olgI1Jk4ftP6" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Info_Tec. Todos os direitos reservados.</p>
+  </div>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000
+      });
+    });
+
+    function changeLanguage(lang) {
+      // Esconder todas as seções de conteúdo
+      document.getElementById('pt-content').style.display = 'none';
+      document.getElementById('en-content').style.display = 'none';
+      document.getElementById('es-content').style.display = 'none';
+      
+      // Mostrar a seção correspondente ao idioma selecionado
+      document.getElementById(lang + '-content').style.display = 'block';
+    }
+
+    function showContent(contentId) {
+      var contents = document.querySelectorAll('section');
+      contents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+      document.getElementById(contentId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>

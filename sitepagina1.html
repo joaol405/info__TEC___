@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="555" type="image/x-icon">
+  <title>Website Multilíngue</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    .header {
+      background-color: #0D575B;
+      color: #ffffff;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .header li:last-child {
+      margin-right: 0;
+    }
+
+    .header li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #0D575B;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+      background-color: #007bff;
+    }
+
+    .aside {
+      background-color: #0D575B;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .footer {
+      background-color: #0D575B;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      clear: both;
+      width: 100%;
+    }
+
+    /* Para desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    @media only screen and (max-width: 768px) {
+      /* Para telefones móveis: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+
+    .slider {
+      width: 80%;
+      margin: auto;
+    }
+
+    .slider img {
+      width: 75%; /* Alterando o tamanho das imagens */
+      height: auto;
+    }
+
+    #whatsapp-number,
+    #facebook-text,
+    #instagram-text {
+      display: none;
+    }
+
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .language-buttons button {
+      background-color: #0D575B;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .language-buttons button:hover {
+      background-color: #007bff;
+    }
+
+     #html-text, #css-text, #javascript-text {
+      color: #ffffff;
+    }
+
+    .background-gradient {
+      background: linear-gradient(to bottom, #017AB1 , #02202B);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+<body class="background-gradient">
+  <div class="header">
+         <h1><img src="logosite.png" alt="Info_tec" style="width: 35%;"></h1>
+    <ul>
+      <li><a href="#" onclick="showContent('html-content')">HTML</a></li>
+      <li><a href="#" onclick="showContent('css-content')">CSS</a></li>
+      <li><a href="#" onclick="showContent('javascript-content')">JAVA SCRIPT</a></li>
+      <li><a href="sitepagina2.html" onclick="showContent('office-content')">OFFICE</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div><img src="imagempag1.jpg" alt="IMAGEM"style="width: 60%;"></div>
+
+      <!-- Additional content for WhatsApp, Facebook, and Instagram -->
+      <section id="html-content" style="display:none;">
+        <div id="html-text">
+         
+         <div><img src="logohtml11.jfif" alt="HTML"></div>
+          <h1> * HTML (Linguagem de Marcação de Hipertexto)</h1> 
+        <p>E a linguagem fundamental para criar e estruturar páginas da web. Desenvolvida por Tim Berners-Lee, utiliza tags para definir diferentes elementos como texto, imagens, links e formulários. Evoluindo com versões como o HTML5, possibilita recursos avançados como elementos multimídia e APIs. Em conjunto com CSS e JavaScript, forma a base do desenvolvimento web moderno.</p>
+          <h1> * HTML (HyperText Markup Language)</h1> 
+          <p>Is the fundamental language for creating and structuring web pages.  Developed by Tim Berners-Lee, it uses tags to define different elements such as text, images, links and forms.  Evolving with versions such as HTML5, it enables advanced features such as multimedia elements and APIs. Together with CSS and JavaScript, it forms the basis of modern web development.</p>
+          <h1> * HTML (Lenguaje de Marcado de Hipertexto)</h1>
+          <p> Es el lenguaje fundamental para crear y estructurar páginas web.  Desarrollado por Tim Berners-Lee, utiliza etiquetas para definir diferentes elementos como texto, imágenes, enlaces y formularios.  Al evolucionar con versiones como HTML5, permite funciones avanzadas como elementos multimedia y API. Junto con CSS y JavaScript, forma la base del desarrollo web moderno.</p>
+        </div>
+      </section>
+
+      <section id="css-content" style="display:none;">
+        <div id="css-text">
+          
+          <div><img src="logocss11.webp" style="width: 50%;"alt="HTML"></div>
+          <h1> * CSS (Folhas de Estilo em Cascata)</h1>
+          <p>E uma linguagem usada para estilizar documentos HTML e XML. Ele separa o conteúdo da apresentação visual, permitindo controlar layout, cores, fontes e outros aspectos visuais de uma página da web. Com seletores, pseudo-classes e hierarquia de estilos, o CSS oferece flexibilidade para criar designs complexos e responsivos, contribuindo para interfaces atraentes e consistentes em diferentes dispositivos e navegadores.</p>
+          <h1> * CSS (Cascading Style Sheets)</h1>
+           <p>Is a language used to style HTML and XML documents.  It separates content from visual presentation, allowing you to control layout, colors, fonts, and other visual aspects of a web page.  With selectors, pseudo-classes, and style hierarchy, CSS offers the flexibility to create complex, responsive designs, contributing to attractive, consistent interfaces across different devices and browsers.
+          <h1> * CSS (Hojas de Estilo en Cascada)</h1> 
+          <p>Es un lenguaje utilizado para diseñar documentos HTML y XML.  Separa el contenido de la presentación visual, lo que le permite controlar el diseño, los colores, las fuentes y otros aspectos visuales de una página web.  Con selectores, pseudoclases y jerarquía de estilos, CSS ofrece la flexibilidad de crear diseños complejos y responsivos, contribuyendo a interfaces atractivas y consistentes en diferentes dispositivos y navegadores.</p>
+        </div>
+      </section>
+
+      <section id="javascript-content" style="display:none;">
+        <div id="javascript-text">
+
+ <div><img src="logojava11.jfif" alt="HTML"></div>
+                    <h1> * JavaScript</h1>
+                     <p>E uma linguagem de programação usada principalmente para desenvolvimento web, permitindo criar interações dinâmicas e funcionalidades em páginas da web. Originalmente para scripts no navegador, agora também é usado no servidor com o Node.js. Sua sintaxe é baseada em ECMAScript, e possui muitas bibliotecas e frameworks como React e Angular. É essencial no desenvolvimento web e tem aplicações em aplicativos mobile, jogos e automação de tarefas.</p>
+                    <h1> * JavaScript</h1>
+                     <p>Is a programming language used primarily for web development, allowing you to create dynamic interactions and functionality on web pages.  Originally for in-browser scripting, it is now also used on the server with Node.js.  Its syntax is based on ECMAScript, and it has many libraries and frameworks such as React and Angular.  It is essential in web development and has applications in mobile applications, games and task automation.</p>
+                    <h1> * JavaScript</h1>
+                     <p>Es un lenguaje de programación utilizado principalmente para el desarrollo web, que le permite crear interacciones dinámicas y funcionalidades en páginas web.  Originalmente para secuencias de comandos en el navegador, ahora también se usa en el servidor con Node.js.  Su sintaxis se basa en ECMAScript y tiene muchas bibliotecas y marcos como React y Angular.  Es fundamental en el desarrollo web y tiene aplicaciones en aplicaciones móviles, juegos y automatización de tareas.</p>
+        </div>
+      </section>
+    </div>
+    <div class="col-6">
+      <div class="slider">
+        <div><img src="hqdefaulthtml.jpg" alt="HTML"></div>
+        <div><img src="hqdefaultcss.jpg" alt="CSS"></div>
+        <div><img src="hqdefaultjs.jpg" alt="JavaScript"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adicione os vídeos aqui -->
+  <div class="videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sj0p9O85AIg" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HtVRRHoASes" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vEwPnjqWQ-g" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>&copy; 2024 Info_Tec. Todos os direitos reservados.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000
+      });
+    });
+
+    function changeLanguage(lang) {
+      // Esconder todas as seções de conteúdo
+      document.getElementById('pt-content').style.display = 'none';
+      document.getElementById('en-content').style.display = 'none';
+      document.getElementById('es-content').style.display = 'none';
+      
+      // Mostrar a seção correspondente ao idioma selecionado
+      document.getElementById(lang + '-content').style.display = 'block';
+    }
+
+    function showContent(contentId) {
+      var contents = document.querySelectorAll('section');
+      contents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+      document.getElementById(contentId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>

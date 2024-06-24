@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="555" type="image/x-icon">
+  <title>Website Multilíngue</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('imgfundo1.jpg'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      background-color: #0D575B;
+      color: #ffffff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .header li:last-child {
+      margin-right: 0;
+    }
+
+    .header li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #0D575B;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+      background-color: #007bff;
+    }
+
+    .aside {
+      background-color: #0D575B;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .footer {
+      background-color: #0D575B;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      clear: both;
+      width: 100%;
+    }
+
+    /* Para desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    @media only screen and (max-width: 768px) {
+      /* Para telefones móveis: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+
+    #whatsapp-number,
+    #facebook-text,
+    #instagram-text {
+      display: none;
+    }
+
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .language-buttons button {
+      background-color: #0D575B;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .language-buttons button:hover {
+      background-color: #007bff;
+    }
+
+    #criacao-text, #agradecimento-text, #avaliação-text, #missao-visao-valores-text {
+      color: #ffffff;
+    }
+
+    .background-gradient {
+      background: linear-gradient(to bottom, #017AB1 , #02202B);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .star-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: 2em;
+      justify-content: center;
+    }
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating label {
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .star-rating input:checked ~ label {
+      color: #f5b301;
+    }
+
+    .star-rating input:hover ~ label {
+      color: #ffdb70;
+    }
+
+    .star-rating label:hover ~ label {
+      color: #ffdb70;
+    }
+
+    .star-rating label::before {
+      content: '\2605';
+    }
+  </style>
+</head>
+<body class="background-gradient">
+  <div class="header">
+    <h1><img src="logosite.png" alt="Info_tec" style="width: 35%;"></h1>
+    <ul>
+      <li><a href="#" onclick="showContent('criacao-content')">CRIAÇÃO</a></li>
+      <li><a href="#" onclick="showContent('agradecimento-content')">AGRADECIMENTO</a></li>
+      <li><a href="#" onclick="showContent('avaliação-content')">AVALIAÇÃO</a></li>
+      <li><a href="paginainicial.html" onclick="showContent('home-content')">HOME</a></li>
+     
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="language-buttons"></div>
+
+      <section id="criacao-content" style="display:none;">
+        <div id="criacao-text">
+          <h1>Criação</h1>
+          <p>Sérgio</p>
+          <p>José Ewerton</p>
+          <p>João Lucas</p>
+          <p>Thiago</p>
+          <p>Lucas Paschoal</p>
+        </div>
+      </section>
+
+      <section id="agradecimento-content" style="display:none;">
+        <div id="agradecimento-text">
+          <h1>* Agradecimento</h1>
+          <p>Agradecemos a todos os professores que nos ajudaram na construção desse projeto, sem a ajuda de vocês não seria realizado.</p>
+          <p>Muito Obrigado!</p>
+          <p>Professor Elson</p>
+          <p>Professor Marcelo</p>
+          <p>Professora Iara</p>
+          <p>Professora Marli</p>
+          <p>Professora Denise</p>
+          <p>Professor Thiago</p>
+          <p>Professor Antônio</p>
+          <p>Professora Isaura</p>
+        </div>
+      </section>
+
+      <section id="avaliação-content" style="display:none;">
+        <div id="avaliação-text">
+          <h1>Avaliação</h1>
+          <p>Deixe a sua avaliação sobre o nosso projeto</p>
+          <div class="star-rating">
+            <input type="radio" id="5-stars" name="rating" value="5" />
+            <label for="5-stars" class="star"></label>
+            <input type="radio" id="4-stars" name="rating" value="4" />
+            <label for="4-stars" class="star"></label>
+            <input type="radio" id="3-stars" name="rating" value="3" />
+            <label for="3-stars" class="star"></label>
+            <input type="radio" id="2-stars" name="rating" value="2" />
+            <label for="2-stars" class="star"></label>
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star" class="star"></label>
+          </div>
+        </div>
+      </section>
+
+      <section id="missao-visao-valores-content">
+        <div id="missao-visao-valores-text">
+          <h1>Missão, Visão e Valores</h1>
+          <h1>Missão:</h1>
+          <p> Ser um time obstinado em prever e atender as necessidades dos clientes e alunos sempre agregando valores;</p>
+          <h1>Visão:</h1>
+          <p> Ser marca líder e inspirar paixão em quem estuda e em quem usa;</p>
+          <h1>Valores:</h1>
+          <p> Honestidade, respeito e dedicação</p>
+        </div>
+
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function showContent(contentId) {
+      var contents = document.querySelectorAll('section');
+      contents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+      document.getElementById(contentId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>

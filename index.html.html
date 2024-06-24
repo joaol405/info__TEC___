@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="555" type="image/x-icon">
+  <title>Website Multilíngue</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('imgfundo1.jpg'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      background-color: #0D575B;
+      color: #ffffff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .header li:last-child {
+      margin-right: 0;
+    }
+
+    .header li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #0D575B;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+      background-color: #007bff;
+    }
+
+    .aside {
+      background-color: #0D575B;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .footer {
+      background-color: #0D575B;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      clear: both;
+      width: 100%;
+    }
+
+    /* Para desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    @media only screen and (max-width: 768px) {
+      /* Para telefones móveis: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+
+    #whatsapp-number,
+    #facebook-text,
+    #instagram-text {
+      display: none;
+    }
+
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .language-buttons button {
+      background-color: #0D575B;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .language-buttons button:hover {
+      background-color: #007bff;
+    }
+
+    #html-text, #css-text {
+      color: #ffffff;
+    }
+
+    .white-text {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1><img src="logosite.png" alt="Info_tec" style="width: 35%;"></h1>
+    <ul>
+      <li><a href="#" onclick="showContent('quem somos-content')">QUEM SOMOS</a></li>
+      <li><a href="#" onclick="showContent('manual do aluno-content')">MANUAL DO ALUNO</a></li>
+      <li><a href="sitepagina1.html" onclick="showContent('nossos cursos-content')">NOSSOS CURSOS</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="language-buttons">
+        <button onclick="changeLanguage('pt')">Português</button>
+        <button onclick="changeLanguage('en')">Inglês</button>
+        <button onclick="changeLanguage('es')">Espanhol</button>
+      </div>
+      <section id="en-content" style="display:none;">
+        <h1 class="white-text">Welcome to our website!</h1>
+        <h1 class="white-text">This is the English version of our website.</h1>
+      </section>
+      <section id="pt-content">
+        <h1 class="white-text">Bem-vindo ao nosso site!</h1>
+        <h1 class="white-text">Esta é a versão em Português do nosso site.</h1>
+      </section>
+      <section id="es-content" style="display:none;">
+        <h1 class="white-text">Bienvenido a nuestro sitio web!</h1>
+        <h1 class="white-text">Esta es la versión en español de nuestro sitio web.</h1>
+      </section>
+
+      <section id="quem somos-content" style="display:none;">
+        <div id="html-text">
+          <h1>Quem Somos !</h1>
+          <p>Somos uma equipe dedicada de profissionais de tecnologia da informação com vasta experiência nas áreas de [especificar áreas relevantes, como desenvolvimento de software, segurança cibernética, redes, etc.]. Nosso objetivo é proporcionar a você conhecimentos práticos e teóricos de ponta para prepará-lo para os desafios dinâmicos e demandas crescentes do setor de tecnologia da informação.</p>
+          <p>Nossos instrutores são especialistas altamente qualificados e experientes, comprometidos em fornecer um ambiente de aprendizado enriquecedor e suporte contínuo para o seu desenvolvimento profissional. Estamos aqui para ajudá-lo a alcançar seus objetivos e se destacar no mundo da TI.</p>
+        </div>
+      </section>
+
+      <section id="manual do aluno-content" style="display:none;">
+        <div id="css-text">
+          <h1>Manual do Aluno : Curso de TI</h1>
+          <p>Este manual foi elaborado para fornecer a você informações essenciais sobre o curso, suas expectativas e recursos disponíveis. Leia atentamente as seções a seguir para garantir uma experiência de aprendizado proveitosa e bem-sucedida.</p>
+          <h1>1. Sobre o Curso :</h1>
+          <p>O curso de Tecnologia da Informação foi projetado para proporcionar aos alunos uma compreensão abrangente das principais áreas de TI.</p>
+          <h1>2. Objetivos do Curso :</h1>
+          <p>- Familiarizar os alunos com os conceitos básicos e avançados de TI.<br>- Desenvolver habilidades práticas em áreas específicas.<br>- Preparar os alunos para enfrentar os desafios técnicos e profissionais do setor de TI.</p>
+          <h1>3. Estrutura do Curso :</h1>
+          <p>- *Módulos.<br>- *Metodologia de Ensino.<br>- *Avaliação.</p>
+          <h1>4. Recursos e Apoio ao Aluno :</h1>
+          <p>- *Plataforma de Aprendizado.<br>- *Suporte Acadêmico.<br>- *Biblioteca.</p>
+          <h1>5. Políticas Acadêmicas :</h1>
+          <p>- *Frequência.<br>- *Integridade Acadêmica.<br>- *Código de Conduta.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+ 
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function changeLanguage(lang) {
+      document.getElementById('pt-content').style.display = 'none';
+      document.getElementById('en-content').style.display = 'none';
+      document.getElementById('es-content').style.display = 'none';
+      document.getElementById(lang + '-content').style.display = 'block';
+    }
+
+    function showContent(contentId) {
+      var contents = document.querySelectorAll('section');
+      contents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+      document.getElementById(contentId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
